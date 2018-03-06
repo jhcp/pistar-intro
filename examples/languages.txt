@@ -1,0 +1,82 @@
+{
+  "actors": [
+    {
+      "id": "957565e7-debe-4123-9e92-98fa89d498a9",
+      "text": "Non-english speaker",
+      "type": "istar.Actor",
+      "x": 119,
+      "y": 49,
+      "nodes": [
+        {
+          "id": "f0fa8b36-e9d1-431e-886b-cbc12e039aaf",
+          "text": "المتطلبات الهندسية",
+          "type": "istar.Resource",
+          "x": 189,
+          "y": 59,
+          "customProperties": {
+            "Language": "Arabic"
+          }
+        },
+        {
+          "id": "3a2785b2-111c-4346-8f86-76d62d6ae9ec",
+          "text": "需求工程",
+          "type": "istar.Resource",
+          "x": 193,
+          "y": 110,
+          "customProperties": {
+            "Language": "Chinese"
+          }
+        },
+        {
+          "id": "aabc730d-4eea-4d3d-94b8-5d651389d2dc",
+          "text": "要求工学",
+          "type": "istar.Resource",
+          "x": 191,
+          "y": 168,
+          "customProperties": {
+            "Language": "Japanese"
+          }
+        },
+        {
+          "id": "d83d0197-6b09-4472-b8c8-5ed5271fa30c",
+          "text": "Açafrão",
+          "type": "istar.Resource",
+          "x": 297,
+          "y": 59,
+          "customProperties": {
+            "Language": "Portuguese"
+          }
+        },
+        {
+          "id": "75c3d5ba-8ae7-450e-bb33-81c9f298318e",
+          "text": "разработка требований",
+          "type": "istar.Resource",
+          "x": 295,
+          "y": 113,
+          "customProperties": {
+            "Language": "Russian"
+          }
+        },
+        {
+          "id": "0ff5ccb2-8266-4f38-b60a-3750cf947d81",
+          "text": "ihtiyaç mühendisliği",
+          "type": "istar.Resource",
+          "x": 296,
+          "y": 169,
+          "customProperties": {
+            "Language": "Turkish"
+          }
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "links": [],
+  "tool": "pistar.1.0.1",
+  "istar": "2.0",
+  "saveDate": "Tue, 06 Mar 2018 17:19:06 GMT",
+  "diagram": {
+    "width": 1700,
+    "height": 1300
+  }
+}
