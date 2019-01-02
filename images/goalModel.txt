@@ -1,0 +1,138 @@
+{
+  "actors": [
+    {
+      "id": "3589ee55-603d-41ee-8bf1-2b2a54498def",
+      "text": "Researcher",
+      "type": "istar.Actor",
+      "x": 106,
+      "y": 87,
+      "nodes": [
+        {
+          "id": "71c7aeb6-fb99-40a1-bcd1-5a29e5b45252",
+          "text": "i* models created",
+          "type": "istar.Goal",
+          "x": 307,
+          "y": 126
+        },
+        {
+          "id": "8d716a61-1ca4-44f4-934c-26166ea44d11",
+          "text": "Use piStar",
+          "type": "istar.Task",
+          "x": 295,
+          "y": 205
+        },
+        {
+          "id": "e159ce92-b29d-4fdc-a533-ee1e904f9f57",
+          "text": "Good Quality",
+          "type": "istar.Quality",
+          "x": 176,
+          "y": 115
+        }
+      ]
+    },
+    {
+      "id": "20840210-992e-4ac2-8d17-b8934d978952",
+      "text": "piStar tool",
+      "type": "istar.Agent",
+      "x": 448,
+      "y": 159,
+      "nodes": []
+    }
+  ],
+  "dependencies": [
+    {
+      "id": "a4fef0e8-8414-4037-bc7d-b489d4d5b705",
+      "text": "High resolution image",
+      "type": "istar.Resource",
+      "x": 362,
+      "y": 304,
+      "customProperties": {
+        "Description": ""
+      },
+      "source": "8d716a61-1ca4-44f4-934c-26166ea44d11",
+      "target": "20840210-992e-4ac2-8d17-b8934d978952"
+    }
+  ],
+  "links": [
+    {
+      "id": "02a456a4-8028-4805-9bb1-49c2b1766f96",
+      "type": "istar.DependencyLink",
+      "source": "8d716a61-1ca4-44f4-934c-26166ea44d11",
+      "target": "a4fef0e8-8414-4037-bc7d-b489d4d5b705"
+    },
+    {
+      "id": "230b59ec-a6b8-4cc5-b557-e18d42e57386",
+      "type": "istar.DependencyLink",
+      "source": "a4fef0e8-8414-4037-bc7d-b489d4d5b705",
+      "target": "20840210-992e-4ac2-8d17-b8934d978952"
+    },
+    {
+      "id": "e311a763-1988-46dd-a06a-a926293fff50",
+      "type": "istar.ContributionLink",
+      "source": "8d716a61-1ca4-44f4-934c-26166ea44d11",
+      "target": "e159ce92-b29d-4fdc-a533-ee1e904f9f57",
+      "label": "help"
+    },
+    {
+      "id": "8e44fb15-0eff-41c2-9970-83b2e6c79207",
+      "type": "istar.OrRefinementLink",
+      "source": "8d716a61-1ca4-44f4-934c-26166ea44d11",
+      "target": "71c7aeb6-fb99-40a1-bcd1-5a29e5b45252"
+    }
+  ],
+  "display": {
+    "a4fef0e8-8414-4037-bc7d-b489d4d5b705": {
+      "width": 97.140625,
+      "height": 35.109375
+    },
+    "02a456a4-8028-4805-9bb1-49c2b1766f96": {
+      "vertices": [
+        {
+          "x": 326,
+          "y": 276
+        }
+      ]
+    },
+    "230b59ec-a6b8-4cc5-b557-e18d42e57386": {
+      "vertices": [
+        {
+          "x": 466,
+          "y": 320
+        },
+        {
+          "x": 501,
+          "y": 306
+        },
+        {
+          "x": 504,
+          "y": 257
+        }
+      ]
+    },
+    "e311a763-1988-46dd-a06a-a926293fff50": {
+      "vertices": [
+        {
+          "x": 285,
+          "y": 218
+        },
+        {
+          "x": 250,
+          "y": 197
+        }
+      ]
+    },
+    "20840210-992e-4ac2-8d17-b8934d978952": {
+      "collapsed": true
+    }
+  },
+  "tool": "pistar.2.0.0a",
+  "istar": "2.0",
+  "saveDate": "Wed, 02 Jan 2019 12:12:54 GMT",
+  "diagram": {
+    "width": 1700,
+    "height": 1300,
+    "customProperties": {
+      "Description": ""
+    }
+  }
+}

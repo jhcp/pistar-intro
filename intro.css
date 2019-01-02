@@ -5,3 +5,11 @@ body {
 .row {
     margin-bottom: 2rem;
 }
+
+details > summary {
+    list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}

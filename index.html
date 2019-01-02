@@ -37,7 +37,7 @@
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="tool/">Tool</a>
+                <a class="nav-link" href="https://www.cin.ufpe.br/~jhcp/pistar/tool/">Tool</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="https://github.com/jhcp/pistar" target="_blank">Development</a>
@@ -56,7 +56,8 @@
             <h1 class="display-3">piStar tool</h1>
             <p>An open-source, online goal modeling tool for <em>i*</em> 2.0. No installation required.</p>
 
-            <p><a class="btn btn-primary btn-lg" href="tool/" role="button">Start now &raquo;</a></p>
+            <p><a class="btn btn-secondary btn-lg" href="https://www.cin.ufpe.br/~jhcp/pistar/tool/" role="button">Start now &raquo;</a></p>
+            <p><a class="btn btn-info btn-lg" href="#news" role="button" onclick="openNews();">Try the newest version (beta) &raquo;</a></p>
         </div>
     </div>
 
@@ -65,10 +66,22 @@
         <div class="row">
             <div class="col-md-4">
                 <h2>iStar 2.0</h2>
-                <p>Create <em>i*</em> 2.0 models with this free online modeling tool. If it's not allowed by the
-                    <em>i*</em> 2.0 standard, it is not allowed by the tool.</p>
-                <p><a class="btn btn-secondary" href="https://sites.google.com/site/istarlanguage/" target="_blank"
-                      role="button">Learn more &raquo;</a></p>
+                <p>Create <em>i*</em> 2.0 models with this free online modeling tool.</p>
+                <p></p>
+                <details>
+                    <summary><div class="btn btn-secondary" href="#" target="_blank"
+                                role="button">Learn more &raquo;</div></summary>
+                    <p>The <a href="https://sites.google.com/site/istarlanguage/"
+                          role="button">iStar 2.0 Language Guide</a> define constraints on which relationships (links)
+                    are valid. Whereas most of these constraints are enforced on the piStar tool, preventing the creation
+                        of invalid models, some of them have
+                    been ignored: </p>
+                    <ul>
+                        <li>The tool allows the creation of cyclic links when more than two elements are involved</li>
+                        <li>The tool allows the creation of and-refinements with a single child</li>
+                    </ul>
+
+                </details>
             </div>
             <div class="col-md-4">
                 <h2>Custom properties</h2>
@@ -85,7 +98,7 @@
         <div class="row">
             <div class="col-md-4">
                 <h2>Smooth links</h2>
-                <p>Add vertexes to customize your links.</p>
+                <p>Add vertices to customize your links.</p>
                 <img src="images/addvertex.gif" width="80%"
                      title="Smooth dependency and contribution links - the other ones are straightened"/>
             </div>
@@ -97,9 +110,9 @@
             </div>
             <div class="col-md-4">
                 <h2>Collapsable actors</h2>
-                <p>(Un)collapse actors with a simple <em>ctrl+click</em>, enabling you to have both SD and SR diagrams
+                <p>(Un)collapse actors with a simple <em>alt+click</em>, enabling you to have both SD and SR diagrams
                     in a single model.</p>
-                <img src="images/collapsableActor.gif" width="80%"
+                <img src="images/collapsableActor.gif" width="70%"
                      title="Collapse and uncollapse, as simple as it gets"/>
             </div>
         </div>
@@ -108,7 +121,7 @@
         <div class="row">
             <div class="col-md-4 alert alert-secondary">
                 <h2>Full screen</h2>
-                <p>To make the most of the tool, press F11 and run the browser in full screen mode.</p>
+                <p>To make the most of the tool, use the Fullscreen toggle that you can find in the Options menu.</p>
             </div>
             <div class="col-md-4">
                 <h2>Export to SVG and PNG</h2>
@@ -174,12 +187,81 @@
             </div>
         </div>
 
-        <h2>News</h2>
+        <h2 id="news">News</h2>
 
         <div class="row">
             <table class="table">
                 <tbody>
 
+                <tr>
+                    <td>
+                        <details id="newest">
+                            <summary><b>Version 2.0.0 beta!</b></summary>
+                            <p id="newest-inside">A new version of the tool is available
+                                <a href="https://www.cin.ufpe.br/~jhcp/pistar/tool/old/2-0beta" target="_blank">here</a>
+                                for early adopters. Go
+                                <a href="https://www.cin.ufpe.br/~jhcp/pistar/tool/old/2-0beta" target="_blank">check it out</a>
+                                ! This is our biggest update yet,
+                                with a revamped UI, improved validity checks, and enhanced model aesthetics,
+                                as well as a host of new features.
+                            </p>
+                            <p>
+                                Please let us know if you
+                                <a href="https://goo.gl/forms/SaJlelSfkTkp819t2" target="_blank">find any bug</a> or
+                                simply <a href="https://goo.gl/forms/SaJlelSfkTkp819t2" target="_blank">send us your feedback</a>.
+                            </p>
+                            <h4>Features</h4>
+                            <ul>
+                                <li>Resize elements. Double-click the resizing handle to restore to default size. <img src="images/resizeelement.gif"
+                                                        title=""/></li>
+                                <li>Add custom properties to links<img src="images/linkproperties.png"
+                                                                       title=""/></li>
+                                <li>Swap labels (values) in contribution links<img src="images/changecontributionvalue.gif"
+                                                                                   title=""/></li>
+                                <li>Swap dependency type in dependency links<img src="images/changedependum.gif"
+                                                                                 title=""/></li>
+                                <li>Flip dependency direction in dependency links<img src="images/flipdependency2.gif"
+                                                                                 title=""/></li>
+                                <li>Change the color of elements<img src="images/changecolor.png"
+                                                                     title=""/></li>
+                                <li>Add custom properties to the diagram as a whole (e.g., project name, authors)</li>
+                                <li>Fullscreen toggle</li>
+                                <li>Improved compatibility with Mac OS</li>
+                            </ul>
+
+                            <h4>Aesthetic changes</h4>
+                            <p>Compare below the visual changes from version 1.2 to 2.0.</p>
+                            <img src="images/aesthetics1-2to2-0.svg" title="Visual changes in the diagrams from version 1.2 to 2.0" width="90%"/>
+
+                            <br><br><h4>Improved Validity Checks</h4>
+                            <p>Two iStar 2.0 constraints that were not enforced in previous verstions of the tool are now enforced:
+                            </p>
+                            <ul>
+                                <li>A single element can be AND-refined or OR-refined, but not both;</li>
+                                <li>For a dependency, if a depender element <i>x</i> exists, then <i>x</i> cannot be refined or
+                                    contributed to.</li>
+                            </ul>
+                            <p>The following constraints are still ignored:</p>
+                            <ul>
+                                <li>There should be no cyclic links;</li>
+                                <li>AND-refinement relations must contain at least two children.</li>
+                            </ul>
+                            <p>Users are still able to load models from previous versions that have invalid links, but
+                            they receive a notification suggesting to fix such links.</p>
+                            <p>Moreover, the error messages when trying to create an invalid link are now clearer.</p>
+
+                            <h4>Improved User Interface</h4>
+                            <p>A new User Interface (see below) has been designed not only to address some of the previous usability issues,
+                                but also to provide space for new and future functionalities.</p>
+                            <img src="images/screenshot.png" title="New User Interface of the piStar tool version 2.0" width="90%"/>
+
+                            <br><br><p>Those are the highlights of this new version. For more details, check out the <a
+                                        href="https://github.com/jhcp/piStar/blob/master/CHANGELOG.md" target="_blank">changelog</a>.
+                            </p>
+                        </details>
+                    </td>
+                    <td width="20%"><b>2019-01-07</b></td>
+                </tr>
                 <tr>
                     <td>
                         <details>
@@ -265,5 +347,15 @@
 
 </main>
 
+<script>
+    function openNews() {
+        //open the details of the newest news, in case it is not open yet
+        newestNews = document.getElementById('newest-inside');
+        if (!!newestNews.offsetHeight || newestNews.getClientRects().length) {
+        } else {
+            document.getElementById('newest').open = true;
+        }
+    }
+</script>
 </body>
 </html>
