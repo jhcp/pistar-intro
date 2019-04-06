@@ -57,7 +57,7 @@
             <p>An open-source, online goal modeling tool for <em>i*</em> 2.0. No installation required.</p>
 
             <p><a class="btn btn-secondary btn-lg" href="https://www.cin.ufpe.br/~jhcp/pistar/tool/" role="button">Start now &raquo;</a></p>
-            <p><a class="btn btn-info btn-lg" href="#news" role="button" onclick="openNews();">Try the newest version (beta) &raquo;</a></p>
+            <p><a class="btn btn-info btn-lg" href="#news" role="button" onclick="openNews();">See what's new in 2.0.0 &raquo;</a></p>
         </div>
     </div>
 
@@ -119,24 +119,31 @@
 
 
         <div class="row">
-            <div class="col-md-4 alert alert-secondary">
-                <h2>Full screen</h2>
-                <p>To make the most of the tool, use the Fullscreen toggle that you can find in the Options menu.</p>
+            <div class="col-md-4">
+                <h2>Error explanation <span class="badge badge-info">NEW</span></h2>
+                <p>Visual aids help users learning the i* syntax.</p>
+                <img src="images/visualaid.png" width="100%"
+                     title="Example of a visual aid when accidentally creating an invalid link"/>
             </div>
             <div class="col-md-4">
                 <h2>Export to SVG and PNG</h2>
                 <p>Create high quality images from your models, ready to be used on journal papers, books, posters and
                     presentations.</p>
+                <div class="alert alert-secondary">
+                    <h2>Full screen</h2>
+                    <p>To make the most of the tool, use the Fullscreen toggle that you can find in the Options menu.</p>
+                </div>
             </div>
             <div class="col-md-4">
                 <h2>Privacy</h2>
                 <p>This modeling tool runs entirely on your browser. Not a single piece of your models are sent to our
                     servers.</p>
-                <p>This page here has no cookies. However, by accessing the actual tool, the Google Analytics service will be activated
-                    with the Anonymize IP option active. This way, we can still learn how many users we have,
-                    while preventing Google from recording your individual IP address.
-                    If this is a concern to you, please click
-                    <a href="https://tools.google.com/dlpage/gaoptout?hl=en" target="_blank">here</a> to opt-out from Google Analytics.</p>
+                <p>This page here has no cookies. However, by accessing the actual tool, the Google Analytics service
+                    will be activated
+                    with the Anonymize IP option active and Marketing features deactivated. This way we can still learn
+                    about the usage of the tool
+                    while preventing Google from recording any personal data.</p>
+                    <p>From within the tool, you can setup your privacy settings and turn off any data collection.</p>
             </div>
         </div>
 
@@ -158,10 +165,13 @@
                     <li><strong><a href="http://vitalets.github.io/x-editable/index.html" target="_blank">X-editable</a> - </strong>enables
                         inline editing of DOM elements
                     </li>
+                    <li><strong><a href="http://bootboxjs.com/" target="_blank">Bootbox</a> - </strong>
+                        for uniformed cross-browser dialogs
+                    </li>
                 </ul>
             </div>
             <div class="col-md-4">
-                <h2>Non-english text <span class="badge badge-info">NEW</span></h2>
+                <h2>Non-english text</h2>
                 <p>Support for editing, saving and loading models with non-english symbols.</p>
                 <p><a href="examples/languages.txt" target="_blank"><img src="examples/languages.svg" width="80%" alt="Diagram with text in different languages" title="Example: Arabic, Chinese, Japanese, Portuguese, Russian, and Turkish"/></a> </p>
             </div>
@@ -196,12 +206,8 @@
                 <tr>
                     <td>
                         <details id="newest">
-                            <summary><b>Version 2.0.0 beta!</b></summary>
-                            <p id="newest-inside">A new version of the tool is available
-                                <a href="https://www.cin.ufpe.br/~jhcp/pistar/tool/old/2-0beta" target="_blank">here</a>
-                                for early adopters. Go
-                                <a href="https://www.cin.ufpe.br/~jhcp/pistar/tool/old/2-0beta" target="_blank">check it out</a>
-                                ! This is our biggest update yet,
+                            <summary><b>Version 2.0.0 released!</b></summary>
+                            <p id="newest-inside">A new version of the tool is available! This is our biggest update yet,
                                 with a revamped UI, improved validity checks, and enhanced model aesthetics,
                                 as well as a host of new features.
                             </p>
@@ -260,7 +266,7 @@
                             </p>
                         </details>
                     </td>
-                    <td width="20%"><b>2019-01-07</b></td>
+                    <td width="20%"><b>2019-04-06</b></td>
                 </tr>
                 <tr>
                     <td>
@@ -356,6 +362,7 @@
             document.getElementById('newest').open = true;
         }
     }
+    openNews();
 </script>
 </body>
 </html>
