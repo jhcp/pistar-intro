@@ -38,16 +38,6 @@
           }
         },
         {
-          "id": "d83d0197-6b09-4472-b8c8-5ed5271fa30c",
-          "text": "Açafrão",
-          "type": "istar.Resource",
-          "x": 297,
-          "y": 59,
-          "customProperties": {
-            "Language": "Portuguese"
-          }
-        },
-        {
           "id": "75c3d5ba-8ae7-450e-bb33-81c9f298318e",
           "text": "разработка требований",
           "type": "istar.Resource",
@@ -59,7 +49,7 @@
         },
         {
           "id": "0ff5ccb2-8266-4f38-b60a-3750cf947d81",
-          "text": "ihtiyaç mühendisliği",
+          "text": "gereksinim mühendisliği",
           "type": "istar.Resource",
           "x": 296,
           "y": 169,
@@ -70,13 +60,18 @@
       ]
     }
   ],
+  "orphans": [],
   "dependencies": [],
   "links": [],
-  "tool": "pistar.1.0.1",
+  "display": {},
+  "tool": "pistar.2.0.0",
   "istar": "2.0",
-  "saveDate": "Tue, 06 Mar 2018 17:19:06 GMT",
+  "saveDate": "Sun, 27 Jun 2021 02:40:07 GMT",
   "diagram": {
     "width": 1700,
-    "height": 1300
+    "height": 1300,
+    "customProperties": {
+      "Description": ""
+    }
   }
 }
